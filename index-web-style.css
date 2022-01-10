@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap");
+
+@import url(https://coolors.co/f6eb8e-f1f7b6);
+
+header {
+  background-color: #f6eb8e;
+}
+
+.nav {
+  text-decoration: underline;
+  color: aliceblue;
+  text-align: end;
+  font-family: "Urbanist", sans-serif;
+}
+
+head,
+body,
+footer {
+  background-color: #f1f7b6;
+}
+
+.title {
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  font-size: 50px;
+  position: relative;
+  animation-name: pulse;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-direction: forwards;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+/* duration | easing-function | delay | iteration-count | direction | fill-mode | play-stat */
+
+@keyframes pulse {
+  from {
+    top: 0;
+  }
+  to {
+    top: 40px;
+  }
+}
+
+.container {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 550px 1fr;
+  grid-template-rows: 400px 1fr;
+  gap: 10px;
+}
+
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 200px;
+  height: 350px;
+  background-color: #f6eb8e;
+  border-width: thick;
+  border-style: dotted;
+  border-color: black;
+}
+
+.item-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 200px;
+  height: 350px;
+  background-color: #f6eb8e;
+  border-width: thick;
+  border-style: dotted;
+  border-color: black;
+}
+
+.item-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 200px;
+  height: 350px;
+  background-color: #f6eb8e;
+  border-width: thick;
+  border-style: dotted;
+  border-color: black;
+}
+
+.item-4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 200px;
+  height: 350px;
+  background-color: #f6eb8e;
+  border-width: thick;
+  border-style: dotted;
+  border-color: black;
+}
+
+.item-5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 200px;
+  height: 350px;
+  background-color: #f6eb8e;
+  border-width: thick;
+  border-style: dotted;
+  border-color: black;
+}
+
+.item-6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 200px;
+  height: 350px;
+  background-color: #f6eb8e;
+  border-width: thick;
+  border-style: dotted;
+  border-color: black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
